@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Blog | Filip Stefanovski</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts: Inter for body text, Playfair Display for headings -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ============================================================
+         NAVIGATION
+         ============================================================ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">FS<span class="logo-dot">.</span></a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#internship" class="nav-link">Internship</a></li>
+                <li><a href="#blog" class="nav-link">Blog</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ============================================================
+         HERO SECTION
+         ============================================================ -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content reveal">
+                <p class="hero-label">Internship Blog | 2026</p>
+                <h1 class="hero-title">Hi, I&rsquo;m <span class="highlight">Filip Stefanovski</span></h1>
+                <p class="hero-subtitle">
+                    3rd-year International Digital Experience Design student at
+                    <strong>Thomas More University of Applied Sciences</strong>,
+                    documenting my internship journey at the
+                    <strong>Swedish Macedonian Chamber of Commerce</strong>.
+                </p>
+                <div class="hero-actions">
+                    <a href="#blog" class="btn btn-primary">Read the Blog</a>
+                    <a href="#about" class="btn btn-outline">About Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         ABOUT ME SECTION
+         ============================================================ -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">A bit about who I am and what drives me</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-photo reveal">
+                    <!-- ================================================
+                         REPLACE THIS: Add your real photo
+                         Replace "assets/filip-photo.jpg" with the path
+                         to your actual photo file.
+                         Recommended size: 400×500px or similar portrait.
+                         ================================================ -->
+                    <div class="photo-placeholder">
+                        <img src="assets/filip-photo.jpg"
+                             alt="Filip Stefanovski"
+                             class="about-img"
+                             onerror="this.style.display='none'; this.parentElement.classList.add('show-fallback');">
+                        <div class="photo-fallback">
+                            <span class="fallback-icon">📷</span>
+                            <p>Replace with Filip's real photo</p>
+                            <small>assets/filip-photo.jpg</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text reveal">
+                    <h3>Filip Stefanovski</h3>
+                    <p class="about-program">
+                        <span class="tag">International Digital Experience Design</span>
+                        <span class="tag">3rd Year</span>
+                        <span class="tag">Thomas More</span>
+                    </p>
+                    <p>
+                        I&rsquo;m a student who is passionate about creating products for both web and mobile platforms.
+                        While I appreciate good design, I find myself drawn more to the development side of things,
+                        building functional, practical digital products that solve real problems.
+                    </p>
+                    <p>
+                        I believe that the best digital solutions come from understanding both the user
+                        and the technology behind the product. I enjoy the process of turning ideas into
+                        working applications that people can actually use in their day-to-day lives.
+                    </p>
+                    <p>
+                        This blog documents my internship at the Swedish Macedonian Chamber of Commerce,
+                        where I&rsquo;m applying my skills in a professional, international setting and growing
+                        as both a developer and a team player.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         INTERNSHIP / COMPANY SECTION
+         ============================================================ -->
+    <section class="section internship" id="internship">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">The Internship</h2>
+                <p class="section-subtitle">Where I work and what I do</p>
+            </div>
+            <div class="internship-card reveal">
+                <div class="internship-info">
+                    <h3>Swedish Macedonian Chamber of Commerce</h3>
+                    <p class="internship-link">
+                        <a href="https://smcc.mk" target="_blank" rel="noopener noreferrer">
+                            smcc.mk ↗
+                        </a>
+                    </p>
+                    <div class="internship-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Role</span>
+                            <span class="detail-value">IT-focused Intern</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Period</span>
+                            <span class="detail-value">9 February &ndash; 15 May 2026</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Team</span>
+                            <span class="detail-value">20+ people across 2 countries</span>
+                        </div>
+                    </div>
+                    <h4>What I work on:</h4>
+                    <ul class="task-list">
+                        <li>Website development (already built and launched)</li>
+                        <li>Backend development and implementation</li>
+                        <li>Exploring mobile app possibilities</li>
+                        <li>Creating social media content</li>
+                        <li>Outreach and communications</li>
+                        <li>Contributing to the outsourcing branch</li>
+                    </ul>
+
+                    <!-- Progress Bar -->
+                    <div class="progress-section">
+                        <div class="progress-header">
+                            <h4>Internship Progress</h4>
+                            <span class="progress-percent" id="progressPercent">0%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progressFill"></div>
+                        </div>
+                        <div class="progress-dates">
+                            <span>9 Feb 2026</span>
+                            <span>15 May 2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Confidentiality Notice -->
+            <div class="confidentiality-notice reveal">
+                <div class="notice-icon">🔒</div>
+                <div class="notice-content">
+                    <h4>Confidentiality Notice</h4>
+                    <p>
+                        The content shared on this blog reflects my personal learning experiences
+                        and general impressions during my internship. In accordance with the
+                        confidentiality agreement discussed with my supervisor, no confidential
+                        company information, private client details, sensitive business processes,
+                        or internal data are disclosed. All reflections are kept general and
+                        focus on my personal and professional growth.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         BLOG POSTS SECTION
+         ============================================================ -->
+    <section class="section blog" id="blog">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Blog Posts</h2>
+                <p class="section-subtitle">Bi-weekly reflections on my internship journey</p>
+            </div>
+
+            <!-- ======================================================
+                 BLOG POST 1
+                 Weeks 1–2 (9 Feb – 23 Feb 2026)
+                 ====================================================== -->
+            <article class="blog-post reveal" id="post-1">
+                <div class="post-header">
+                    <div class="post-meta">
+                        <span class="post-date">23 February 2026</span>
+                        <span class="post-period">Weeks 1–2</span>
+                    </div>
+                    <h3 class="post-title">First Impressions and Building the Foundation</h3>
+                </div>
+                <div class="post-body">
+                    <!-- REFLECTION 1: What I did, skills needed, realizations -->
+                    <h4>What I Worked On</h4>
+                    <p>
+                        The first two weeks at the Swedish Macedonian Chamber of Commerce have been a whirlwind.
+                        My primary task was to build the organization&rsquo;s website from scratch. I was given a brief
+                        and some brand guidelines, and from there it was largely up to me to plan the structure,
+                        design the layout, and implement everything. This required strong front-end skills
+                        like HTML, CSS, and JavaScript, as well as an understanding of user experience principles
+                        from my studies. One of my biggest realizations was how different it is to build something
+                        for a real organization compared to a school project. Every decision carries more weight
+                        when real users are going to interact with the result.
+                    </p>
+
+                    <!-- REFLECTION 2: Deadlines, planning ahead -->
+                    <h4>Deadlines &amp; Planning</h4>
+                    <p>
+                        The initial deadline for the website&rsquo;s first version was met on time. I planned my
+                        work by breaking the site into sections and tackling them one by one. For the coming weeks,
+                        the plan is to refine the website based on feedback, begin exploring the backend requirements,
+                        and start contributing to the team&rsquo;s social media output.
+                    </p>
+
+                    <!-- REFLECTION 3: What I learned and how -->
+                    <h4>What I Learned</h4>
+                    <p>
+                        Beyond the technical skills I practiced, I learned a great deal about working within an
+                        organization that operates across two countries. Communication happens in different time zones
+                        and across cultural boundaries, which taught me the importance of being clear and proactive
+                        in my messages. I also gained a deeper appreciation for how much effort goes into managing
+                        an organization from the inside. There are so many moving parts that aren&rsquo;t
+                        visible from the outside.
+                    </p>
+
+                    <!-- REFLECTION 4: Environment, colleagues, mentor -->
+                    <h4>The Environment</h4>
+                    <p>
+                        The team is larger than I expected, over 20 people, and everyone has been
+                        welcoming. I&rsquo;ve already met several professionals from various business backgrounds,
+                        which has been eye-opening. My colleagues come with different values and working styles,
+                        and I&rsquo;m learning to adapt my communication accordingly. The work environment is
+                        quite pleasant and motivating, which makes it easy to stay engaged. Being treated as
+                        &ldquo;the IT guy&rdquo; from day one was a bit surprising, but it also gave me an
+                        immediate sense of responsibility and ownership over the digital side of things.
+                    </p>
+
+                    <!-- REFLECTION 5: Strengths and growth areas -->
+                    <h4>Strengths &amp; Growth</h4>
+                    <p>
+                        I feel confident in my front-end development skills, which allowed me to deliver the website
+                        on schedule. Where I see room for growth is in project estimation. I underestimated
+                        how long certain design decisions would take when they need stakeholder approval. On the
+                        soft-skills side, I&rsquo;m getting better at professional communication, but I want to
+                        improve my ability to present technical ideas to non-technical colleagues.
+                    </p>
+
+                    <!-- REFLECTION 6: Positive ending -->
+                    <h4>Looking Ahead</h4>
+                    <p>
+                        Overall, I&rsquo;m genuinely enjoying this internship. The work is engaging, the people
+                        are interesting, and I can already feel that this experience is opening doors. I see real
+                        potential in creating a digital solution here that could become something valuable,
+                        not just for the organization, but as a learning experience for my future career. I&rsquo;m
+                        excited for what the coming weeks will bring.
+                    </p>
+                </div>
+            </article>
+
+            <!-- ======================================================
+                 BLOG POST 2
+                 Weeks 3–4 (24 Feb – 9 Mar 2026)
+                 ====================================================== -->
+            <article class="blog-post reveal" id="post-2">
+                <div class="post-header">
+                    <div class="post-meta">
+                        <span class="post-date">9 March 2026</span>
+                        <span class="post-period">Weeks 3–4</span>
+                    </div>
+                    <h3 class="post-title">Beyond the Website: Expanding My Role</h3>
+                </div>
+                <div class="post-body">
+                    <!-- REFLECTION 1: What I did, skills needed, realizations -->
+                    <h4>What I Worked On</h4>
+                    <p>
+                        With the organization&rsquo;s main website launched and live, these two weeks marked a shift
+                        in my responsibilities. A major new task has been creating a website and building the social
+                        media presence for an upcoming event called
+                        <a href="https://biznisarena.vercel.app" target="_blank" rel="noopener noreferrer">Biznis Arena</a>.
+                        This has been a great opportunity to apply my development skills to a real project with a clear
+                        deadline and audience. Alongside that, I continued creating social media posts for the organization,
+                        which required a different kind of thinking: concise messaging, visual consistency, and understanding
+                        what resonates with a professional audience. I also started supporting outreach efforts and got my
+                        first exposure to the outsourcing branch of the organization, which gave me insight into how business
+                        development works in practice. A key realization was that digital work in an organization
+                        like this isn&rsquo;t just about building things. It&rsquo;s about connecting people
+                        and communicating value.
+                    </p>
+
+                    <!-- REFLECTION 2: Deadlines, planning ahead -->
+                    <h4>Deadlines &amp; Planning</h4>
+                    <p>
+                        All deadlines for social media content and outreach tasks were met this period. The
+                        Biznis Arena website is progressing well and the current progress can be viewed at
+                        <a href="https://biznisarena.vercel.app" target="_blank" rel="noopener noreferrer">biznisarena.vercel.app</a>.
+                        The next phase will also involve diving deeper into backend development. I&rsquo;ve started
+                        researching technologies and architectures that could support the organization&rsquo;s needs
+                        long-term, and there have been early conversations about whether a mobile app could add value.
+                        My plan for the next two weeks is to continue refining the Biznis Arena site, set up a
+                        development environment for backend work, and keep delivering consistent social media content.
+                    </p>
+
+                    <!-- REFLECTION 3: What I learned and how -->
+                    <h4>What I Learned</h4>
+                    <p>
+                        I learned that content creation is a skill in itself. Writing a social media post that is
+                        both professional and engaging takes more thought than I initially assumed. I also learned
+                        about outreach strategies and how organizations build professional relationships,
+                        something I hadn&rsquo;t been exposed to before. On the technical side, I started exploring
+                        backend frameworks and database options, which are new territories for me. I&rsquo;m learning
+                        by reading documentation, watching tutorials, and discussing possibilities with colleagues
+                        who have more experience in this area.
+                    </p>
+
+                    <!-- REFLECTION 4: Environment, colleagues, mentor -->
+                    <h4>The Environment</h4>
+                    <p>
+                        The international nature of the team continues to be one of the most enriching aspects
+                        of this internship. Working with people from different professional backgrounds,
+                        from business consultants to marketing specialists, has broadened my perspective
+                        significantly. I&rsquo;ve had the opportunity to sit in on meetings where businesspeople
+                        discuss strategy and partnerships, which feels like a rare opportunity for a student.
+                        The atmosphere is professional but also supportive, and the overall work environment
+                        continues to be pleasant and motivating. I appreciate that my contributions
+                        are taken seriously despite being an intern.
+                    </p>
+
+                    <!-- REFLECTION 5: Strengths and growth areas -->
+                    <h4>Strengths &amp; Growth</h4>
+                    <p>
+                        I&rsquo;m becoming more comfortable with multitasking across different types of work,
+                        switching between development, content creation, and communication tasks within the same day.
+                        I think my technical foundation is strong, and I&rsquo;m building on it steadily. Where I
+                        still want to grow is in backend development, which is new for me, and in time management
+                        when juggling multiple responsibilities. I also want to improve my ability to take initiative
+                        in meetings and share ideas more confidently.
+                    </p>
+
+                    <!-- REFLECTION 6: Positive ending -->
+                    <h4>Looking Ahead</h4>
+                    <p>
+                        These weeks have reinforced how much I enjoy this internship. It&rsquo;s fun to work on
+                        things that matter, with people who care about what they do. I&rsquo;m gaining exposure
+                        to technologies and professional situations that I wouldn&rsquo;t encounter in a classroom.
+                        The experience truly feels like it&rsquo;s opening many doors, and I&rsquo;m motivated
+                        to keep pushing myself. There&rsquo;s real potential here, and I want to make the most
+                        of every remaining week.
+                    </p>
+                </div>
+            </article>
+
+            <!-- ======================================================
+                 FUTURE BLOG POST TEMPLATE
+                 Copy this block and fill in your reflections for each
+                 new bi-weekly post. Remember to:
+                 1. Update the date and week range
+                 2. Update the post title
+                 3. Fill in all 6 reflection sections
+                 4. Give the article a unique id (e.g., id="post-3")
+                 5. Always end on a positive point
+                 ====================================================== -->
+            <article class="blog-post blog-post--template reveal" id="post-template">
+                <div class="post-header">
+                    <div class="post-meta">
+                        <span class="post-date">📅 [Date, e.g., 23 March 2026]</span>
+                        <span class="post-period">[Weeks X–Y]</span>
+                    </div>
+                    <h3 class="post-title">📝 [Your Post Title Here]</h3>
+                    <p class="template-note">
+                        <em>This is a template for future blog posts. Copy this block,
+                        fill in your reflections, and remove this note.</em>
+                    </p>
+                </div>
+                <div class="post-body">
+                    <h4>What I Worked On</h4>
+                    <p>
+                        [Describe what you did during the past two weeks. What tasks did you work on?
+                        What skills did you need? Were there any realizations or surprises?]
+                    </p>
+
+                    <h4>Deadlines &amp; Planning</h4>
+                    <p>
+                        [Were deadlines met? If not, explain why. What is your plan for the next few weeks?]
+                    </p>
+
+                    <h4>What I Learned</h4>
+                    <p>
+                        [What new things did you learn? How did you learn them? Through practice,
+                        feedback, research, collaboration?]
+                    </p>
+
+                    <h4>The Environment</h4>
+                    <p>
+                        [Share something about your colleagues, mentor, fellow students, or the
+                        general work environment. How does the culture or atmosphere affect your work?]
+                    </p>
+
+                    <h4>Strengths &amp; Growth</h4>
+                    <p>
+                        [What do you already do well? Where do you still see growth opportunities?
+                        Include both technical skills and soft skills.]
+                    </p>
+
+                    <h4>Looking Ahead</h4>
+                    <p>
+                        [End on a positive point. What are you looking forward to? What motivates you?]
+                    </p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- ============================================================
+         FOOTER
+         ============================================================ -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Filip Stefanovski</h3>
+                    <p>International Digital Experience Design | 3rd Year</p>
+                    <p>Thomas More University of Applied Sciences</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Internship</h4>
+                    <p>
+                        <a href="https://smcc.mk" target="_blank" rel="noopener noreferrer">
+                            Swedish Macedonian Chamber of Commerce ↗
+                        </a>
+                    </p>
+                    <p>February &ndash; May 2026</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Filip Stefanovski | Internship Blog</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
