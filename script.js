@@ -113,9 +113,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    backToTopBtn.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
+    if (backToTopBtn) {
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
 
     /* --------------------------------------------------------
        6. MOBILE NAV TOGGLE
@@ -169,6 +171,27 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 400);
         }
     }
+
+    /* --------------------------------------------------------
+       8. FOOTER LIVE CLOCK
+       Shows the current time in Skopje (CET/CEST).
+       -------------------------------------------------------- */
+    function updateFooterClock() {
+        const clockEl = document.getElementById('footerClock');
+        if (!clockEl) return;
+        const now = new Date();
+        const time = now.toLocaleTimeString('en-GB', {
+            timeZone: 'Europe/Skopje',
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit',
+            hour12: false
+        });
+        clockEl.textContent = time;
+    }
+
+    updateFooterClock();
+    setInterval(updateFooterClock, 1000);
 
     /* --------------------------------------------------------
        INITIAL CALLS
