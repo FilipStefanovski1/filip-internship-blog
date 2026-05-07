@@ -194,6 +194,109 @@ document.addEventListener('DOMContentLoaded', () => {
     setInterval(updateFooterClock, 1000);
 
     /* --------------------------------------------------------
+       9. LOGOS STRIP
+       Shows the logo image when src is set, hides placeholder.
+       -------------------------------------------------------- */
+    document.querySelectorAll('.logo-img').forEach(img => {
+        if (!img.getAttribute('src')) return;
+        img.addEventListener('load', () => img.classList.add('loaded'));
+        img.addEventListener('error', () => {}); // keep placeholder on broken src
+        if (img.complete && img.naturalWidth) img.classList.add('loaded');
+    });
+
+    /* --------------------------------------------------------
+       10. DESIGNS GALLERY — Filter & Lightbox
+       -------------------------------------------------------- */
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const designItems = document.querySelectorAll('.design-item');
+
+    // Mark cards that have a real image src
+    designItems.forEach(item => {
+        const img = item.querySelector('.design-img');
+        const wrap = item.querySelector('.design-img-wrap');
+        if (img && img.getAttribute('src')) {
+            wrap.classList.add('has-image');
+        }
+    });
+
+    // Filter tabs
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            const filter = btn.dataset.filter;
+            designItems.forEach(item => {
+                const match = filter === 'all' || item.dataset.category === filter;
+                item.classList.toggle('hidden', !match);
+            });
+        });
+    });
+
+    // Lightbox
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxCaption = document.getElementById('lightboxCaption');
+    const lightboxClose = document.getElementById('lightboxClose');
+    const lightboxPrev = document.getElementById('lightboxPrev');
+    const lightboxNext = document.getElementById('lightboxNext');
+    let lbItems = [];
+    let lbIndex = 0;
+
+    function getVisibleWithImages() {
+        return [...designItems].filter(item =>
+            !item.classList.contains('hidden') &&
+            item.querySelector('.design-img-wrap').classList.contains('has-image')
+        );
+    }
+
+    function showLightboxItem() {
+        const item = lbItems[lbIndex];
+        const img = item.querySelector('.design-img');
+        const cap = item.querySelector('.design-caption');
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        lightboxCaption.textContent = cap ? cap.textContent : '';
+        lightboxPrev.classList.toggle('hidden', lbIndex === 0);
+        lightboxNext.classList.toggle('hidden', lbIndex === lbItems.length - 1);
+    }
+
+    function openLightbox(index) {
+        lbItems = getVisibleWithImages();
+        if (!lbItems.length) return;
+        lbIndex = index;
+        showLightboxItem();
+        lightbox.classList.add('open');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+        lightbox.classList.remove('open');
+        document.body.style.overflow = '';
+    }
+
+    designItems.forEach(item => {
+        const wrap = item.querySelector('.design-img-wrap');
+        wrap.addEventListener('click', () => {
+            if (!wrap.classList.contains('has-image')) return;
+            const visible = getVisibleWithImages();
+            const idx = visible.indexOf(item);
+            if (idx !== -1) openLightbox(idx);
+        });
+    });
+
+    if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+    if (lightboxPrev) lightboxPrev.addEventListener('click', () => { if (lbIndex > 0) { lbIndex--; showLightboxItem(); } });
+    if (lightboxNext) lightboxNext.addEventListener('click', () => { if (lbIndex < lbItems.length - 1) { lbIndex++; showLightboxItem(); } });
+    if (lightbox) lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
+
+    document.addEventListener('keydown', e => {
+        if (!lightbox || !lightbox.classList.contains('open')) return;
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft' && lbIndex > 0) { lbIndex--; showLightboxItem(); }
+        if (e.key === 'ArrowRight' && lbIndex < lbItems.length - 1) { lbIndex++; showLightboxItem(); }
+    });
+
+    /* --------------------------------------------------------
        INITIAL CALLS
        Run on page load so elements in view are visible
        immediately.

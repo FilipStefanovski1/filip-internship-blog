@@ -26,6 +26,7 @@
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#internship" class="nav-link">Internship</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#designs" class="nav-link">Designs</a></li>
                 <li><a href="#blog" class="nav-link">Blog</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#challenges" class="nav-link">Challenges</a></li>
@@ -190,6 +191,53 @@
     </section>
 
     <!-- ============================================================
+         WORKED WITH / LOGOS SECTION
+         HOW TO ADD A LOGO:
+         1. Drop the file into assets/logos/
+         2. Set src="assets/logos/your-file.png" on the matching <img>
+         ============================================================ -->
+    <div class="logos-strip">
+        <div class="container">
+            <p class="logos-label">Worked with</p>
+            <div class="logos-grid">
+
+                <div class="logo-item">
+                    <div class="logo-wrap">
+                        <img src="assets/logos/smccloog.jpg" alt="SMCC" class="logo-img">
+                        <span class="logo-placeholder">SMCC</span>
+                    </div>
+                    <span class="logo-name">Swedish Macedonian<br>Chamber of Commerce</span>
+                </div>
+
+                <div class="logo-item">
+                    <div class="logo-wrap">
+                        <img src="assets/logos/ump.png" alt="Phoenix Rising" class="logo-img logo-img--oversized">
+                        <span class="logo-placeholder">Phoenix Rising</span>
+                    </div>
+                    <span class="logo-name">Phoenix Rising</span>
+                </div>
+
+                <div class="logo-item">
+                    <div class="logo-wrap logo-wrap--dark">
+                        <img src="assets/logos/umd.png" alt="United Macedonian Diaspora" class="logo-img">
+                        <span class="logo-placeholder">UMD</span>
+                    </div>
+                    <span class="logo-name">United Macedonian<br>Diaspora</span>
+                </div>
+
+                <div class="logo-item">
+                    <div class="logo-wrap">
+                        <img src="assets/logos/bkcsk.png" alt="Blockchain Skopje" class="logo-img">
+                        <span class="logo-placeholder">Blockchain Skopje</span>
+                    </div>
+                    <span class="logo-name">Blockchain Skopje</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================
          PROJECTS SECTION
          ============================================================ -->
     <section class="section projects" id="projects">
@@ -205,7 +253,7 @@
                     <p class="project-description">
                         The official website for the Swedish Macedonian Chamber of Commerce.
                         Built from scratch based on brand guidelines, with a full backend implemented
-                        via Supabase — covering database, authentication, and API integration alongside
+                        via Supabase, covering database, authentication, and API integration alongside
                         the front-end.
                     </p>
                     <span class="project-link">www.smcc.mk ↗</span>
@@ -224,15 +272,170 @@
                     <div class="project-icon">⛓️</div>
                     <h3 class="project-name">Blockchain Skopje</h3>
                     <p class="project-description">
-                        Official website for Blockchain Skopje — a hackathon and summit in Skopje.
+                        Official website for Blockchain Skopje, a hackathon and summit in Skopje.
                         Built and branded from scratch, covering event details, speakers, sponsors,
                         and ticket information.
                     </p>
                     <span class="project-link">blockchainskopje.com ↗</span>
                 </a>
+                <!-- Update href with the live UMD URL when available -->
+                <a href="https://genm-three.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-card reveal">
+                    <div class="project-icon">🌍</div>
+                    <h3 class="project-name">United Macedonian Diaspora</h3>
+                    <p class="project-description">
+                        Full rebrand and new website for the United Macedonian Diaspora, a global
+                        organization connecting Macedonians worldwide. Handled the visual identity, website
+                        build, and social media content as part of the broader digital overhaul.
+                    </p>
+                    <span class="project-link">genm-three.vercel.app ↗</span>
+                </a>
+                <a href="https://mastorify-dev.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-card reveal project-card--wip">
+                    <div class="project-wip-badge">In Development</div>
+                    <div class="project-icon">📱</div>
+                    <h3 class="project-name">Mastorify</h3>
+                    <p class="project-description">
+                        Mobile app for the Greek market connecting customers with the right service providers
+                        and helping service providers grow their client base. Covers product design, app
+                        development, and the full journey of researching how to build and register a startup
+                        in a country I don&rsquo;t reside in.
+                    </p>
+                    <span class="project-link">mastorify-dev.vercel.app ↗</span>
+                </a>
             </div>
         </div>
     </section>
+
+    <!-- ============================================================
+         POSTS & DESIGNS SECTION
+         ============================================================ -->
+    <section class="section designs" id="designs">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Posts &amp; Designs</h2>
+                <p class="section-subtitle">Social media content and visuals I created</p>
+            </div>
+
+            <div class="designs-filters reveal">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="smcc">SMCC</button>
+                <button class="filter-btn" data-filter="blockchain">Blockchain Skopje</button>
+            </div>
+
+            <!--
+                HOW TO ADD AN IMAGE:
+                1. Drop the file into assets/designs/ (create the folder)
+                2. Set src="assets/designs/your-file.jpg" on the <img> below
+                3. Update the alt text and <p class="design-caption"> text
+                4. Duplicate any block to add more items
+            -->
+            <div class="designs-grid" id="designsGrid">
+
+                <!-- SMCC -->
+                <div class="design-item reveal" data-category="smcc">
+                    <div class="design-card">
+                        <div class="design-img-wrap">
+                            <img src="assets/SMCC.png" alt="SMCC social media post" class="design-img">
+                            <div class="design-placeholder">
+                                <span class="placeholder-brand">SMCC</span>
+                                <small>Add src to show</small>
+                            </div>
+                            <span class="design-badge badge-smcc">SMCC</span>
+                            <div class="design-overlay"><span class="view-icon">&#x2197;</span></div>
+                        </div>
+                        <p class="design-caption">SMCC, Social post</p>
+                    </div>
+                </div>
+
+                <div class="design-item reveal" data-category="smcc">
+                    <div class="design-card">
+                        <div class="design-img-wrap">
+                            <img src="" alt="" class="design-img">
+                            <div class="design-placeholder">
+                                <span class="placeholder-brand">SMCC</span>
+                                <small>Add src to show</small>
+                            </div>
+                            <span class="design-badge badge-smcc">SMCC</span>
+                            <div class="design-overlay"><span class="view-icon">&#x2197;</span></div>
+                        </div>
+                        <p class="design-caption">[Caption]</p>
+                    </div>
+                </div>
+
+                <div class="design-item reveal" data-category="smcc">
+                    <div class="design-card">
+                        <div class="design-img-wrap">
+                            <img src="" alt="" class="design-img">
+                            <div class="design-placeholder">
+                                <span class="placeholder-brand">SMCC</span>
+                                <small>Add src to show</small>
+                            </div>
+                            <span class="design-badge badge-smcc">SMCC</span>
+                            <div class="design-overlay"><span class="view-icon">&#x2197;</span></div>
+                        </div>
+                        <p class="design-caption">[Caption]</p>
+                    </div>
+                </div>
+
+                <!-- Blockchain Skopje -->
+                <div class="design-item reveal" data-category="blockchain">
+                    <div class="design-card">
+                        <div class="design-img-wrap">
+                            <img src="assets/bkcsk1.png" alt="Blockchain Skopje post 1" class="design-img">
+                            <div class="design-placeholder">
+                                <span class="placeholder-brand">Blockchain Skopje</span>
+                                <small>Add src to show</small>
+                            </div>
+                            <span class="design-badge badge-blockchain">Blockchain Skopje</span>
+                            <div class="design-overlay"><span class="view-icon">&#x2197;</span></div>
+                        </div>
+                        <p class="design-caption">Blockchain Skopje, Post 1</p>
+                    </div>
+                </div>
+
+                <div class="design-item reveal" data-category="blockchain">
+                    <div class="design-card">
+                        <div class="design-img-wrap">
+                            <img src="assets/bkcsk2.png" alt="Blockchain Skopje post 2" class="design-img">
+                            <div class="design-placeholder">
+                                <span class="placeholder-brand">Blockchain Skopje</span>
+                                <small>Add src to show</small>
+                            </div>
+                            <span class="design-badge badge-blockchain">Blockchain Skopje</span>
+                            <div class="design-overlay"><span class="view-icon">&#x2197;</span></div>
+                        </div>
+                        <p class="design-caption">Blockchain Skopje, Post 2</p>
+                    </div>
+                </div>
+
+                <div class="design-item reveal" data-category="blockchain">
+                    <div class="design-card">
+                        <div class="design-img-wrap">
+                            <img src="assets/bkc1mespeak.jpeg" alt="Filip speaking at Blockchain Skopje" class="design-img">
+                            <div class="design-placeholder">
+                                <span class="placeholder-brand">Blockchain Skopje</span>
+                                <small>Add src to show</small>
+                            </div>
+                            <span class="design-badge badge-blockchain">Blockchain Skopje</span>
+                            <div class="design-overlay"><span class="view-icon">&#x2197;</span></div>
+                        </div>
+                        <p class="design-caption">Blockchain Skopje, Speaking at the event</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+        <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous">&#8249;</button>
+        <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next">&#8250;</button>
+        <div class="lightbox-inner">
+            <img src="" alt="" id="lightboxImg">
+            <p class="lightbox-caption" id="lightboxCaption"></p>
+        </div>
+    </div>
 
     <!-- ============================================================
          BLOG POSTS SECTION
@@ -341,18 +544,19 @@
                     <!-- REFLECTION 1: What I did, skills needed, realizations -->
                     <h4>What I Worked On</h4>
                     <p>
-                        With the organization&rsquo;s main website launched and live, these two weeks marked a shift
-                        in my responsibilities. A major new task has been creating a website and building the social
-                        media presence for an upcoming event called
-                        <a href="https://biznisarena.vercel.app" target="_blank" rel="noopener noreferrer">Biznis Arena</a>.
-                        This has been a great opportunity to apply my development skills to a real project with a clear
-                        deadline and audience. Alongside that, I continued creating social media posts for the organization,
-                        which required a different kind of thinking: concise messaging, visual consistency, and understanding
-                        what resonates with a professional audience. I also started supporting outreach efforts and got my
-                        first exposure to the outsourcing branch of the organization, which gave me insight into how business
-                        development works in practice. A key realization was that digital work in an organization
-                        like this isn&rsquo;t just about building things. It&rsquo;s about connecting people
-                        and communicating value.
+                        The work these weeks stretched well beyond the SMCC office. A major new task was building
+                        the website and social media presence for
+                        <a href="https://biznisarena.vercel.app" target="_blank" rel="noopener noreferrer">Biznis Arena</a>
+                       , an event co-organized by the Chamber aimed at Macedonian businesses looking to expand into
+                        Sweden. But what made this period especially interesting was getting to work more closely alongside
+                        <strong>Phoenix Rising</strong>, a union for young entrepreneurs that has a strong connection with
+                        SMCC. Some of the work crossed over into their space, different location, different people,
+                        different energy. The Chamber operates with a more institutional, cross-border feel, while Phoenix
+                        Rising runs on more of a startup-community vibe, driven by younger people who are actively building
+                        things. Both environments taught me something different about how professional networks function and
+                        how organizations with aligned missions can support each other without merging into one. A key
+                        realization across all of it was that digital work in a setting like this isn&rsquo;t just about
+                        building things, it&rsquo;s about connecting people and communicating value.
                     </p>
 
                     <!-- REFLECTION 2: Deadlines, planning ahead -->
@@ -383,14 +587,16 @@
                     <!-- REFLECTION 4: Environment, colleagues, mentor -->
                     <h4>The Environment</h4>
                     <p>
-                        The international nature of the team continues to be one of the most enriching aspects
-                        of this internship. Working with people from different professional backgrounds,
-                        from business consultants to marketing specialists, has broadened my perspective
-                        significantly. I&rsquo;ve had the opportunity to sit in on meetings where businesspeople
-                        discuss strategy and partnerships, which feels like a rare opportunity for a student.
-                        The atmosphere is professional but also supportive, and the overall work environment
-                        continues to be pleasant and motivating. I appreciate that my contributions
-                        are taken seriously despite being an intern.
+                        Getting to work across two different spaces, the Chamber and the Phoenix Rising
+                        community, gave me a more layered sense of what professional environments can look like.
+                        Phoenix Rising has a noticeably different energy: more informal, more builder-focused, and
+                        populated by people who are in the early stages of their entrepreneurial journey. The contrast
+                        with the Chamber&rsquo;s more structured, diplomatically oriented atmosphere was striking.
+                        I found myself adapting quickly to each, more measured in one setting, more exploratory
+                        in the other. Both were welcoming, and both pushed me to think about what kind of professional
+                        environment I work best in. The international nature of the team continues to be one of the
+                        most enriching aspects of all of this, and sitting in on strategic meetings still feels like
+                        a rare opportunity for a student.
                     </p>
 
                     <!-- REFLECTION 5: Strengths and growth areas -->
@@ -432,13 +638,13 @@
                 <div class="post-body">
                     <h4>What I Worked On</h4>
                     <p>
-                        Alongside my internship, I&rsquo;ve been co-founding Blockchain Skopje — a hackathon and
+                        Alongside my internship, I&rsquo;ve been co-founding Blockchain Skopje, a hackathon and
                         summit taking place in Skopje aimed at bringing together builders, founders, and blockchain
                         enthusiasts from the region. My role sits somewhere between product and design: I&rsquo;m
                         responsible for the visual identity of the event, everything from the overall branding direction
                         to the individual assets we push out on social media. This meant starting from scratch and
                         making a lot of early decisions that would set the tone for everything that came after.
-                        Defining the color palette, the gradient style, the typography — all of it had to feel cohesive
+                        Defining the color palette, the gradient style, the typography, all of it had to feel cohesive
                         and intentional. I drew inspiration from the raw, workshop-like energy of Base42, which led
                         me toward a &ldquo;builder&rdquo; aesthetic: darker tones, bold gradients, a vibe that feels
                         like something real is being made, not just marketed.
@@ -447,7 +653,7 @@
                     <h4>Deadlines &amp; Planning</h4>
                     <p>
                         The event has a fixed date, which means the design work runs on a tight, content-driven
-                        schedule. Every week there are new assets to ship — speaker announcement cards, sponsor posts,
+                        schedule. Every week there are new assets to ship, speaker announcement cards, sponsor posts,
                         ticket urgency graphics, and event reminders. Each one has to go out at the right moment and
                         look consistent with everything that came before. I&rsquo;ve had to think beyond just making
                         things look good and start thinking about designing for conversion: clear calls to action,
@@ -461,18 +667,18 @@
                         The biggest design lesson so far has been learning to spot when something looks
                         &ldquo;AI-generated&rdquo; and fixing it. Early drafts of some assets had that overly polished,
                         slightly sterile quality that you see everywhere now. I started paying more attention to
-                        small things — irregular spacing, more deliberate font choices, avoiding the same layout
-                        patterns — to get the visuals to feel more human. I also learned a lot about designing across
+                        small things, irregular spacing, more deliberate font choices, avoiding the same layout
+                        patterns, to get the visuals to feel more human. I also learned a lot about designing across
                         platforms. What works on Instagram doesn&rsquo;t always translate to LinkedIn, and Discord
                         has its own context entirely. Each platform needed slightly different framing, even when the
-                        content was the same. That kind of thinking — adapting the message to the medium — is
+                        content was the same. That kind of thinking, adapting the message to the medium, is
                         something I hadn&rsquo;t consciously practiced before.
                     </p>
 
                     <h4>The Environment</h4>
                     <p>
                         Working as a co-founder is a different experience from being an intern. There&rsquo;s no
-                        one to hand off decisions to — if a design doesn&rsquo;t work, that&rsquo;s on me to catch
+                        one to hand off decisions to, if a design doesn&rsquo;t work, that&rsquo;s on me to catch
                         and fix before it goes live. The feedback loop is fast, sometimes within hours of posting
                         something I&rsquo;m already thinking about what to change next time. It&rsquo;s also been
                         a good exercise in communicating design decisions to people who aren&rsquo;t designers.
@@ -485,7 +691,7 @@
                     <p>
                         I feel like I&rsquo;ve gotten noticeably faster at producing design assets without sacrificing
                         quality, which is something that only comes from doing it repeatedly under real pressure.
-                        Branding consistency has been one of my stronger points — keeping everything visually tied
+                        Branding consistency has been one of my stronger points, keeping everything visually tied
                         together across weeks of output takes discipline. Where I&rsquo;ve had to grow is in the
                         conversion-focused side of design. Thinking about what a post is trying to make someone
                         <em>do</em>, not just feel, is a skill I&rsquo;m still developing. I&rsquo;m also getting
@@ -495,11 +701,96 @@
                     <h4>Looking Ahead</h4>
                     <p>
                         As the event gets closer, the pace of design work is picking up. There&rsquo;s a lot still
-                        to produce — website updates, final event materials, and last-push promotional content.
+                        to produce, website updates, final event materials, and last-push promotional content.
                         I&rsquo;m excited to see how the full identity holds together in the weeks ahead, and more
                         than anything, I&rsquo;m curious to see how people respond to the event itself. It&rsquo;s
                         one thing to design for something in the abstract; it&rsquo;s another to watch real people
                         engage with it. That feedback will be the most useful thing I take away from this.
+                    </p>
+                </div>
+            </article>
+
+            <!-- ======================================================
+                 BLOG POST 4
+                 Weeks 7–8 (24 Mar – 6 Apr 2026)
+                 ====================================================== -->
+            <article class="blog-post reveal" id="post-4">
+                <div class="post-header">
+                    <div class="post-meta">
+                        <span class="post-date">6 April 2026</span>
+                        <span class="post-period">Weeks 7–8</span>
+                    </div>
+                    <h3 class="post-title">Ambassadors, Diplomacy, and a Different Kind of Networking</h3>
+                </div>
+                <div class="post-body">
+                    <h4>What I Worked On</h4>
+                    <p>
+                        These two weeks introduced me to a side of the internship I hadn&rsquo;t anticipated:
+                        diplomatic-level networking. As part of my role at the Chamber, I had the opportunity to sit
+                        in on meetings with ambassadors from different countries, an experience that felt
+                        genuinely out of the ordinary for a student. The most significant were meetings connected to
+                        the Swedish Embassy in Macedonia and the Norwegian Embassy in Belgrade. The Swedish
+                        ambassador&rsquo;s relationship with SMCC is close and longstanding, the
+                        Chamber&rsquo;s entire reason for existing is to facilitate trade and relationships between
+                        Sweden and Macedonia, so that connection is central to what we do. The Norwegian side came
+                        through a different angle, but what struck me was how naturally the two embassies relate to
+                        each other. Sweden and Norway operate with a remarkably similar diplomatic philosophy, and
+                        you genuinely feel that in the room.
+                    </p>
+
+                    <h4>Deadlines &amp; Planning</h4>
+                    <p>
+                        The ambassador meetings weren&rsquo;t my primary deliverables for the week, but they took up
+                        significant mental space. Alongside them, I continued pushing forward on the usual development
+                        and content work. The priority for the coming weeks is to keep the SMCC digital presence
+                        updated and to channel what I learned from these high-level conversations into how we
+                        communicate the organization&rsquo;s mission online. Understanding who the Chamber works with
+                        at this level makes it easier to make the right decisions about tone and positioning.
+                    </p>
+
+                    <h4>What I Learned</h4>
+                    <p>
+                        I learned that diplomacy and business development aren&rsquo;t as separate as they sound.
+                        Both embassies were deeply invested in practical outcomes, trade, partnerships,
+                        visibility for their respective countries. The ambassadors weren&rsquo;t symbolic figures;
+                        they were people actively thinking about how to create real connections. That realization
+                        changed how I think about the Chamber&rsquo;s work. It&rsquo;s not just a trade organization
+                       , it operates at the intersection of culture, politics, and commerce. Understanding
+                        that helps me make better decisions about how the digital presence should communicate
+                        that identity.
+                    </p>
+
+                    <h4>The Environment</h4>
+                    <p>
+                        Sitting in a room with an ambassador is a different kind of professional experience. The
+                        conversations are measured, the stakes feel higher, and the context is richer than a
+                        typical meeting. What surprised me most was how approachable both the Swedish and Norwegian
+                        ambassadors were. There was a genuine warmth in both interactions and a clear sense of shared
+                        purpose, Sweden and Norway have a strong bilateral relationship, and that comes
+                        through in how their diplomatic representatives engage with the same organizations. It made
+                        me appreciate how much of international relations runs on personal rapport as much as
+                        formal structure. The strong connection between the two embassies wasn&rsquo;t something I
+                        had expected, but it was one of the more interesting things I took away from the whole
+                        experience.
+                    </p>
+
+                    <h4>Strengths &amp; Growth</h4>
+                    <p>
+                        I felt more comfortable in these settings than I expected. I was quiet where it was
+                        appropriate to be quiet and engaged when given the opening. What I want to keep developing
+                        is my ability to ask better questions in high-context conversations, questions that
+                        add something rather than just confirming what&rsquo;s already been said. That&rsquo;s a
+                        skill that takes time, but I&rsquo;m more aware of it now than I was before these weeks.
+                    </p>
+
+                    <h4>Looking Ahead</h4>
+                    <p>
+                        These weeks reinforced that this internship is exposing me to things I wouldn&rsquo;t
+                        access through any other channel. Being in the room for conversations at that level, 
+                        and understanding even a fraction of the context behind them, is rare. I want to
+                        make sure I&rsquo;m drawing the right lessons from it, not just treating it as an
+                        interesting experience, but letting it genuinely shape how I think about international work
+                        and professional relationships going forward.
                     </p>
                 </div>
             </article>
@@ -511,46 +802,286 @@
                  1. Update the date and week range
                  2. Update the post title
                  3. Fill in all 6 reflection sections
-                 4. Give the article a unique id (e.g., id="post-3")
+                 4. Give the article a unique id (e.g., id="post-5")
                  5. Always end on a positive point
                  ====================================================== -->
-            <article class="blog-post blog-post--template reveal" id="post-template">
+            <!-- ======================================================
+                 BLOG POST 5
+                 Weeks 9–10 (7 Apr – 20 Apr 2026)
+                 ====================================================== -->
+            <article class="blog-post reveal" id="post-5">
                 <div class="post-header">
                     <div class="post-meta">
-                        <span class="post-date">[Date]</span>
-                        <span class="post-period">[Weeks X–Y]</span>
+                        <span class="post-date">20 April 2026</span>
+                        <span class="post-period">Weeks 9–10</span>
                     </div>
-                    <h3 class="post-title">[Title here]</h3>
+                    <h3 class="post-title">Rebranding the United Macedonian Diaspora</h3>
                 </div>
                 <div class="post-body">
                     <h4>What I Worked On</h4>
                     <p>
-                        [Describe what I did these two weeks.]
+                        These two weeks were dominated by one of the most substantial projects I&rsquo;ve taken
+                        on during the internship: a full rebrand and website rebuild for the
+                        <strong>United Macedonian Diaspora</strong>, a global organization connecting Macedonians
+                        living around the world. The scope was broader than any previous project, it wasn&rsquo;t
+                        just a new website, it was a rethink of the entire visual identity. That meant establishing
+                        a new direction for the brand, translating it into a coherent design system, building the
+                        site from the ground up, and then extending that identity across social media content.
+                        Each of those pieces fed into the others, which made it feel less like a series of tasks
+                        and more like a single, interconnected project that had to be held together consistently
+                        throughout.
                     </p>
 
                     <h4>Deadlines &amp; Planning</h4>
                     <p>
-                        [Were deadlines met? What is the plan for the next few weeks?]
+                        The rebrand had a tight timeline given how much ground it covered. I worked through it by
+                        prioritizing the visual identity first, once the brand direction was clear, the
+                        website and social content followed more naturally. The main challenge was making sure
+                        decisions made early on held up across all the different surfaces the brand needed to appear
+                        on. A color choice that works on a website doesn&rsquo;t automatically work on a social
+                        media post, and those gaps have to be caught before they compound. All deliverables were
+                        met within the timeframe, and the work moving into the next weeks is focused on refinements
+                        and ongoing content.
                     </p>
 
                     <h4>What I Learned</h4>
                     <p>
-                        [What did I learn and how?]
+                        Rebranding an existing organization is meaningfully different from building something new.
+                        There&rsquo;s an existing identity, even if it&rsquo;s outdated, and an
+                        audience that has some relationship with it. Getting the balance right between modernizing
+                        and maintaining a sense of continuity required more careful thinking than I expected.
+                        I also learned a lot about what it takes to design for a diaspora organization specifically:
+                        the audience is geographically spread, culturally diverse within a shared identity, and
+                        the brand needs to feel inclusive across all of that. That informed a lot of the decisions
+                        I made around tone, imagery direction, and visual language.
                     </p>
 
                     <h4>The Environment</h4>
                     <p>
-                        [Something about the work environment, colleagues, or mentor.]
+                        Working on the UMD project added another dimension to the internship. It connected to the
+                        broader mission of the Chamber in an interesting way, both organizations are, at
+                        their core, about building and maintaining Macedonian connections across borders. Working
+                        across multiple organizations with overlapping but distinct missions has been one of the
+                        more unusual aspects of this internship, and it&rsquo;s given me a much wider view of the
+                        ecosystem than I would have gotten working within a single company.
                     </p>
 
                     <h4>Strengths &amp; Growth</h4>
                     <p>
-                        [What am I doing well? Where can I still grow?]
+                        The scope of this project pushed my ability to hold a consistent creative direction across
+                        a long stretch of work. I think that&rsquo;s something I&rsquo;ve genuinely improved at.
+                        Where I want to grow is in the handoff side of things, making sure the brand
+                        guidelines I establish are documented clearly enough that someone else could pick them up
+                        and continue without losing the thread. That discipline is something I&rsquo;m still
+                        building.
                     </p>
 
                     <h4>Looking Ahead</h4>
                     <p>
-                        [End on a positive note.]
+                        Completing a full rebrand for a real international organization is the kind of work I
+                        didn&rsquo;t expect to be doing at this stage. The fact that it&rsquo;s live and being
+                        used is a good reminder that the internship has produced tangible outcomes, not just
+                        learning experiences. That&rsquo;s something I want to carry into the final weeks, 
+                        keeping the quality high and finishing strong.
+                    </p>
+                </div>
+            </article>
+
+            <!-- ======================================================
+                 FUTURE BLOG POST TEMPLATE
+                 Copy this block and fill in your reflections for each
+                 new bi-weekly post. Remember to:
+                 1. Update the date and week range
+                 2. Update the post title
+                 3. Fill in all 6 reflection sections
+                 4. Give the article a unique id (e.g., id="post-6")
+                 5. Always end on a positive point
+                 ====================================================== -->
+            <!-- ======================================================
+                 BLOG POST 6
+                 Weeks 11–12 (21 Apr – 4 May 2026)
+                 ====================================================== -->
+            <article class="blog-post reveal" id="post-6">
+                <div class="post-header">
+                    <div class="post-meta">
+                        <span class="post-date">4 May 2026</span>
+                        <span class="post-period">Weeks 11–12</span>
+                    </div>
+                    <h3 class="post-title">Building Mastorify: Apps, Startups, and the AI Boom</h3>
+                </div>
+                <div class="post-body">
+                    <h4>What I Worked On</h4>
+                    <p>
+                        These weeks marked a significant shift in the direction my supervisor has been pushing
+                        me toward. Beyond the organizational work I&rsquo;d been doing at the Chamber, he started
+                        actively encouraging me to move into building new apps and designing the product experiences
+                        around them. The context behind that push is hard to ignore: we&rsquo;re in the middle of
+                        an AI boom, and the window for building smart, well-timed products has never felt more
+                        open. The project that came out of that conversation is <strong>Mastorify</strong>, 
+                        a mobile app targeting the Greek market. The core idea is straightforward but genuinely
+                        useful: help customers find the right service providers, and help service providers find
+                        more customers. Think of it as a marketplace built around trust and discoverability,
+                        targeting an underserved gap in how local services are discovered and booked in Greece.
+                        These weeks were spent on early product design, mapping user flows, and building out the
+                        initial app structure.
+                    </p>
+
+                    <h4>Deadlines &amp; Planning</h4>
+                    <p>
+                        Mastorify doesn&rsquo;t have a fixed launch deadline yet, but the work is moving in
+                        parallel to my remaining internship weeks. The immediate priorities were getting the
+                        core concept clearly defined, validating that the problem is real, and establishing
+                        the design direction for the app. Alongside the product work, I also started researching
+                        what it would actually take to run a business in Greece as someone who doesn&rsquo;t
+                        reside there, tax structures, company registration options, whether a sole
+                        trader setup or a registered entity makes more sense at this stage. That research is
+                        ongoing and is shaping how I think about the timeline for a proper launch.
+                    </p>
+
+                    <h4>What I Learned</h4>
+                    <p>
+                        The legal and administrative side of starting a business in a foreign country is
+                        genuinely complex. Greece has its own requirements around business registration, VAT,
+                        and what operating as a non-resident entails, and a lot of those details aren&rsquo;t
+                        easy to find in English. I also spent time thinking through different business models:
+                        subscription vs. commission-based, whether to charge service providers or customers or
+                        both, how to build trust early when the platform has no track record. These aren&rsquo;t
+                        theoretical exercises, they directly affect what gets built and in what order.
+                        I&rsquo;ve come to appreciate that the business plan and the product are inseparable
+                        at this stage. What you decide to charge shapes who your users are and how the product
+                        has to behave.
+                    </p>
+
+                    <h4>The Environment</h4>
+                    <p>
+                        Having a supervisor who actively pushes you to think bigger is something I
+                        didn&rsquo;t expect going into this internship. The conversation that led to Mastorify
+                        wasn&rsquo;t a task assignment, it was more of a challenge: given everything
+                        you&rsquo;ve built here, what could you build for yourself? That framing changed
+                        how I approached the work. I wasn&rsquo;t executing someone else&rsquo;s brief
+                        anymore, I was making the decisions, owning the direction, and living with the
+                        consequences of those choices. That&rsquo;s a different kind of pressure, and a more
+                        motivating one.
+                    </p>
+
+                    <h4>Strengths &amp; Growth</h4>
+                    <p>
+                        I&rsquo;ve found that I can move quickly from concept to working prototype when the
+                        idea is clear enough in my head. The design work for Mastorify came together faster
+                        than I expected because I had a strong mental model of the problem from the start.
+                        Where I&rsquo;m growing is in startup thinking more broadly, understanding
+                        how to validate before building too much, how to structure a business model that
+                        actually makes money, and how to think about legal and operational infrastructure
+                        without letting it slow the momentum down completely. These aren&rsquo;t skills that
+                        come from courses. They come from doing.
+                    </p>
+
+                    <h4>Looking Ahead</h4>
+                    <p>
+                        Mastorify is the most personally exciting thing to come out of this internship. It
+                        sits at the intersection of everything I&rsquo;ve been building toward: product
+                        thinking, design, development, and now the business layer on top of all of that.
+                        The AI boom isn&rsquo;t slowing down, and if there&rsquo;s a moment to build
+                        something real, this feels like it. I&rsquo;m committed to seeing it through past
+                        the internship, and the foundation laid in these weeks gives me genuine confidence
+                        that it can become something.
+                    </p>
+                </div>
+            </article>
+
+            <!-- ======================================================
+                 FUTURE BLOG POST TEMPLATE
+                 Copy this block and fill in your reflections for each
+                 new bi-weekly post. Remember to:
+                 1. Update the date and week range
+                 2. Update the post title
+                 3. Fill in all 6 reflection sections
+                 4. Give the article a unique id (e.g., id="post-7")
+                 5. Always end on a positive note
+                 ====================================================== -->
+            <!-- ======================================================
+                 BLOG POST 7
+                 Weeks 13–14 (5 May – 15 May 2026)
+                 ====================================================== -->
+            <article class="blog-post reveal" id="post-7">
+                <div class="post-header">
+                    <div class="post-meta">
+                        <span class="post-date">15 May 2026</span>
+                        <span class="post-period">Weeks 13–14</span>
+                    </div>
+                    <h3 class="post-title">The Bigger Picture: Networks, Outsourcing, and Our First Real Clients</h3>
+                </div>
+                <div class="post-body">
+                    <h4>What I Worked On</h4>
+                    <p>
+                        As the internship reaches its final weeks, something that has been quietly taking shape
+                        throughout the whole period is now becoming clear: everything I&rsquo;ve been working on
+                        has been part of building an outsourcing business. Not a hypothetical one, a real
+                        one, with a deliberate strategy behind it. The approach was straightforward but smart:
+                        start by finding real clients, do most of the work at a reduced or no cost, gain genuine
+                        experience, build a real portfolio, and establish trust with organizations that would
+                        otherwise never take a chance on someone starting out. Every website, every rebrand,
+                        every social media campaign, SMCC, Phoenix Rising, United Macedonian Diaspora,
+                        Blockchain Skopje, Biznis Arena, all of it was laying the groundwork. These
+                        are not just projects. They will be our first clients, the ones I can proudly put on
+                        the website of the business we are building together.
+                    </p>
+
+                    <h4>Deadlines &amp; Planning</h4>
+                    <p>
+                        The immediate focus is on documenting the work clearly enough that it can be presented
+                        professionally on the outsourcing business website. That means writing proper case
+                        studies, collecting results where we have them, and framing each project in terms of
+                        the business problem it solved, not just the technical or creative work involved.
+                        The business itself is still being structured, but the portfolio already exists.
+                        That&rsquo;s an unusual position to be in, and it&rsquo;s one of the things that
+                        makes this internship genuinely different from a typical placement.
+                    </p>
+
+                    <h4>What I Learned</h4>
+                    <p>
+                        The biggest lesson of these final weeks is about how to build something from zero
+                        without any of the usual shortcuts. You can&rsquo;t pitch a portfolio you don&rsquo;t
+                        have, and you can&rsquo;t charge what you&rsquo;re worth before you&rsquo;ve proven
+                        what you&rsquo;re worth. The strategy of investing time and effort upfront, 
+                        doing serious work for organizations that gave us a chance, is the only honest
+                        path to having something real to show. I&rsquo;ve also learned that building a
+                        business alongside an internship requires treating every piece of work as both a
+                        deliverable and an asset. The discipline of thinking that way changes how you
+                        approach even the smallest task.
+                    </p>
+
+                    <h4>The Environment</h4>
+                    <p>
+                        One of the things that has genuinely surprised me about this internship is how much
+                        my network has grown. I came in as a student and I&rsquo;m leaving with connections
+                        across IT, business, diplomacy, entrepreneurship, and the startup world, people
+                        I would never have met through university alone. Ambassadors, founders, business
+                        consultants, developers, event organizers, diaspora leaders. Each project brought a
+                        different set of people into my orbit, and many of those relationships have turned
+                        into ongoing conversations. That network is, in many ways, the most valuable thing
+                        I&rsquo;m taking out of this experience. A portfolio can be rebuilt; the right
+                        connections, built on real shared work, are much harder to manufacture.
+                    </p>
+
+                    <h4>Strengths &amp; Growth</h4>
+                    <p>
+                        I&rsquo;ve become more comfortable thinking in terms of business outcomes rather than
+                        just deliverables. That shift, from &ldquo;what did I build?&rdquo; to
+                        &ldquo;what did this achieve, and for whom?&rdquo;, is something I want to
+                        keep. Where I still want to grow is in the commercial side: pricing work properly,
+                        having direct conversations about scope and value, and not underselling what I can
+                        actually deliver. The confidence to charge appropriately comes from having the
+                        portfolio to back it up. I&rsquo;m getting there.
+                    </p>
+
+                    <h4>Looking Ahead</h4>
+                    <p>
+                        This internship ends on paper in May, but what it set in motion doesn&rsquo;t. The
+                        outsourcing business continues. Mastorify continues. The network continues to grow.
+                        I came in as a student looking for experience and I&rsquo;m leaving as someone with
+                        real clients, a real portfolio, and a real business being built. That wasn&rsquo;t
+                        the plan when I started, but looking back, it was exactly the right outcome.
                     </p>
                 </div>
             </article>
@@ -565,11 +1096,11 @@
         <div class="container">
             <div class="stats-grid">
                 <div class="stat-item">
-                    <span class="stat-number">3</span>
+                    <span class="stat-number">4</span>
                     <span class="stat-label">Websites Launched</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-number">3</span>
+                    <span class="stat-number">5</span>
                     <span class="stat-label">Projects</span>
                 </div>
                 <div class="stat-item">
@@ -605,12 +1136,12 @@
                     <h4>From ideas to working things</h4>
                     <p>
                         Most of the work here involved making decisions that had real consequences. Building the SMCC
-                        website wasn&rsquo;t just a development task — it required understanding what the organization
+                        website wasn&rsquo;t just a development task, it required understanding what the organization
                         wanted to communicate, who their audience was, and how to translate that into a structure that
                         made sense to a first-time visitor. The same applied to Biznis Arena and Blockchain Skopje. In
                         each case I had to think about what the product was trying to achieve before I could make any
-                        useful decisions about how it should look or work. That shift — from &ldquo;what does this look
-                        like?&rdquo; to &ldquo;what is this trying to do?&rdquo; — is something I didn&rsquo;t fully
+                        useful decisions about how it should look or work. That shift, from &ldquo;what does this look
+                        like?&rdquo; to &ldquo;what is this trying to do?&rdquo;, is something I didn&rsquo;t fully
                         appreciate before this internship.
                     </p>
                 </div>
@@ -621,8 +1152,8 @@
                     <h4>Visual identity and consistency</h4>
                     <p>
                         The Blockchain Skopje project pushed me to think seriously about visual identity in a way that
-                        school projects never quite did. I had to establish a visual language from scratch — colors,
-                        gradients, typography — and then apply it consistently across weeks of social media output,
+                        school projects never quite did. I had to establish a visual language from scratch, colors,
+                        gradients, typography, and then apply it consistently across weeks of social media output,
                         speaker cards, sponsor posts, and event graphics. The recurring challenge was making things feel
                         considered rather than generated. I started paying attention to font weight contrast, spacing
                         decisions, and layout variety, because those small choices are what separate something that
@@ -636,7 +1167,7 @@
                     <h4>Building and shipping</h4>
                     <p>
                         I built and launched three websites during this internship: the SMCC platform, Biznis Arena,
-                        and the Blockchain Skopje site. The SMCC work went beyond front-end — I implemented a backend
+                        and the Blockchain Skopje site. The SMCC work went beyond front-end, I implemented a backend
                         using Supabase, handling the database, authentication, and API layer. That was my first time
                         working with a real backend on a live product, and it changed how I think about front-end
                         code too. The Biznis Arena and Blockchain Skopje sites had tighter timelines and clearer
@@ -651,11 +1182,11 @@
                     <p>
                         Writing social media content for a professional organization is harder than it sounds. Every
                         post has to be accurate, appropriately toned, and short enough to actually be read. I learned
-                        to adapt the same core message for different platforms — what works on LinkedIn doesn&rsquo;t
+                        to adapt the same core message for different platforms, what works on LinkedIn doesn&rsquo;t
                         work on Instagram, and Discord is its own context entirely. I also got involved in outreach
                         efforts, which gave me a direct look at how organizations build professional relationships.
-                        Being clear and proactive in communication — especially in a cross-cultural, two-country
-                        setup — became something I consciously worked on throughout.
+                        Being clear and proactive in communication, especially in a cross-cultural, two-country
+                        setup, became something I consciously worked on throughout.
                     </p>
                 </div>
 
@@ -669,7 +1200,7 @@
                         behind them, speaker cards had to go out on specific dates, sponsor content had to be approved
                         before it could be published. I started to understand how different workstreams of an event fit
                         together and how each design asset was serving a broader operational goal. It changed how I think
-                        about design — it&rsquo;s not just visual output, it&rsquo;s part of how something runs.
+                        about design, it&rsquo;s not just visual output, it&rsquo;s part of how something runs.
                     </p>
                 </div>
 
@@ -709,7 +1240,7 @@
                     <div class="challenge-body">
                         <h4>Operating Without a Registered Entity</h4>
                         <p>
-                            Not being a registered company affects more than just payments — it touches how sponsors engage
+                            Not being a registered company affects more than just payments, it touches how sponsors engage
                             with you, how agreements are structured, and how much trust you can build quickly with external
                             parties. A lot of the infrastructure around running events assumes you already have a legal
                             entity in place. Working around that required more manual coordination and transparency in
@@ -724,7 +1255,7 @@
                     <div class="challenge-body">
                         <h4>Managing Multiple Platforms Simultaneously</h4>
                         <p>
-                            Instagram, LinkedIn, Discord, a website, and email were all live at the same time — each with
+                            Instagram, LinkedIn, Discord, a website, and email were all live at the same time, each with
                             its own content cadence, tone, and audience. Keeping everything consistent without letting
                             anything slip required a level of organization I had to build quickly. The challenge wasn&rsquo;t
                             just having enough content; it was making sure the right content went to the right place at
@@ -743,8 +1274,8 @@
                             especially for time-sensitive announcements. That pace leaves little room for extended
                             iteration. I had to get better at producing something good enough quickly, rather than
                             waiting until it felt perfect. That&rsquo;s a harder shift than it sounds when you care about
-                            the quality of what you&rsquo;re putting out. Learning to draw that line — good enough
-                            versus needs more work — was one of the more practical skills I developed.
+                            the quality of what you&rsquo;re putting out. Learning to draw that line, good enough
+                            versus needs more work, was one of the more practical skills I developed.
                         </p>
                     </div>
                 </div>
@@ -756,7 +1287,7 @@
                         <p>
                             Much of the feedback I received came from people who weren&rsquo;t thinking in terms of
                             code or design systems. Translating between what a stakeholder wanted and what was technically
-                            or practically feasible — without making it feel like a negotiation — was something I had to
+                            or practically feasible, without making it feel like a negotiation, was something I had to
                             figure out as I went. It pushed me to explain decisions more clearly and to understand that
                             what I build only matters if the people around me understand what it does and why it was
                             built that way.
@@ -783,7 +1314,7 @@
                     <p class="tools-group-label">⌨️ &nbsp;Development</p>
                     <div class="tool-item">
                         <span class="tool-name">HTML / CSS / JavaScript</span>
-                        <p class="tool-desc">Core stack for both the SMCC website and Biznis Arena. No framework — everything written by hand, which kept things simple and fast to iterate on.</p>
+                        <p class="tool-desc">Core stack for both the SMCC website and Biznis Arena. No framework, everything written by hand, which kept things simple and fast to iterate on.</p>
                     </div>
                     <div class="tool-item">
                         <span class="tool-name">Vite</span>
@@ -795,7 +1326,7 @@
                     </div>
                     <div class="tool-item">
                         <span class="tool-name">Supabase</span>
-                        <p class="tool-desc">Backend-as-a-service used for the SMCC platform — database, authentication, and API layer. Handled real data without needing to build a full backend from scratch.</p>
+                        <p class="tool-desc">Backend-as-a-service used for the SMCC platform, database, authentication, and API layer. Handled real data without needing to build a full backend from scratch.</p>
                     </div>
                     <div class="tool-item">
                         <span class="tool-name">Git</span>
@@ -811,7 +1342,7 @@
                     </div>
                     <div class="tool-item">
                         <span class="tool-name">Canva</span>
-                        <p class="tool-desc">Main tool for producing social media assets at speed — speaker cards, sponsor posts, urgency graphics. Fast enough to keep up with the event content calendar.</p>
+                        <p class="tool-desc">Main tool for producing social media assets at speed, speaker cards, sponsor posts, urgency graphics. Fast enough to keep up with the event content calendar.</p>
                     </div>
                 </div>
 
@@ -831,7 +1362,7 @@
                     <p class="tools-group-label">💬 &nbsp;Communication</p>
                     <div class="tool-item">
                         <span class="tool-name">Discord</span>
-                        <p class="tool-desc">Primary coordination channel for Blockchain Skopje — community announcements, team discussions, and day-to-day event planning.</p>
+                        <p class="tool-desc">Primary coordination channel for Blockchain Skopje, community announcements, team discussions, and day-to-day event planning.</p>
                     </div>
                     <div class="tool-item">
                         <span class="tool-name">Instagram &amp; LinkedIn</span>
@@ -862,31 +1393,37 @@
                     It goes live, it gets visited by real people, and if something is wrong, someone notices. That
                     changes how you approach every decision. I started this internship confident in my front-end skills
                     and less sure about everything else. By the end, I realized that the technical part was often the
-                    easier part — what&rsquo;s harder is knowing what to build, understanding why it matters, and
+                    easier part, what&rsquo;s harder is knowing what to build, understanding why it matters, and
                     communicating that to everyone involved.
                 </p>
                 <p>
                     One of the harder adjustments was learning to let go of things. In school, there&rsquo;s usually
                     time to iterate until something feels right. Here, there were deadlines that didn&rsquo;t move,
                     events that happened regardless, and stakeholders who needed things done. I learned to distinguish
-                    between what actually needed to be good and what just needed to be finished — and to ship things
-                    that weren&rsquo;t quite where I wanted them, as long as they were functional and honest.
+                    between what actually needed to be good and what just needed to be finished, and to ship
+                    things that weren&rsquo;t quite where I wanted them, as long as they were functional and honest.
                     That&rsquo;s a harder line to draw than it sounds.
                 </p>
                 <p>
-                    I came in thinking of myself primarily as a developer. What this internship showed me is that the
-                    lines between design, development, communication, and operations are blurrier than they look from
-                    the outside. On any given day I might be writing a social media post, pushing code, making a
-                    branding decision, or figuring out why something wasn&rsquo;t working on mobile. That variety is
-                    what made the experience worthwhile — and it pushed me to think more holistically about what
-                    digital work actually involves.
+                    What I didn&rsquo;t expect was how much my network would grow. I came in as a student and I&rsquo;m
+                    leaving with connections across IT, business, diplomacy, startups, and the Macedonian diaspora
+                    worldwide, people I would never have met through university alone. Each project pulled a
+                    different set of people into my orbit, and many of those relationships have outlasted the
+                    individual work. That network is, in many ways, the most valuable thing I&rsquo;m taking out
+                    of this experience.
                 </p>
                 <p>
-                    I leave this internship with a clearer sense of what I&rsquo;m capable of and where I still have
-                    room to grow. The combination of building real products, working inside a real organization, and
-                    co-founding a real event gave me a foundation I couldn&rsquo;t have gotten in a classroom. I&rsquo;m
-                    a more complete thinker now — not just about code or design, but about how things work and how
-                    to make them work better.
+                    The clearest thing I understand now, looking back, is that every project was part of something
+                    larger: building the portfolio and the client base for an outsourcing business. The strategy was
+                    deliberate, find real organizations, do serious work, earn trust, and it worked.
+                    SMCC, Phoenix Rising, United Macedonian Diaspora, Blockchain Skopje, Biznis Arena: these
+                    aren&rsquo;t just items on a CV. They are our first clients. And the business we are building
+                    will launch with them already on its website.
+                </p>
+                <p>
+                    I came in thinking of myself primarily as a developer. I&rsquo;m leaving as someone who builds
+                    products, understands businesses, navigates international networks, and is actively co-building
+                    a company. The internship ends on paper. What it set in motion doesn&rsquo;t.
                 </p>
             </div>
         </div>
@@ -915,7 +1452,7 @@
                 <a href="#reflection">Reflection</a>
             </nav>
             <p class="footer-tagline">
-                IDED Student at Thomas More.<br>
+                IXD Student at Thomas More.<br>
                 Interning at SMCC &amp; building<br>
                 Blockchain Skopje.
             </p>
