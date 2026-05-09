@@ -1239,6 +1239,9 @@ p:last-child {
     align-items: center;
     gap: 0.75rem;
     text-align: center;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
 }
 
 .logo-wrap {
@@ -1419,6 +1422,11 @@ p:last-child {
 .badge-blockchain {
     background: #1a1a2e;
     color: var(--color-accent);
+}
+
+.badge-genm {
+    background: #c0392b;
+    color: #ffffff;
 }
 
 .design-overlay {
